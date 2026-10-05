@@ -1,5 +1,5 @@
 -- Машин (улсын дугаар) түвшний KPI: давтамж, зарцуулалт, өр, сегмент
-{% set seg_days = var('vehicle_segment_days') %}
+{% set seg_days = var('vehicle_segment_days', 2) %}
 with t as (select * from {{ ref('silver_ticket') }} where number_plate is not null),
 ref_date as (select max(entered_at) as as_of from t)
 

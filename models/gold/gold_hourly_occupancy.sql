@@ -1,5 +1,5 @@
 -- Цаг бүрт зогсоолд байсан машины тоо (occupancy). Гараагүй тасалбарыг var-аар хязгаарлана.
-{% set max_h = var('open_ticket_max_hours') %}
+{% set max_h = var('open_ticket_max_hours', 12) %}
 with spans as (
     select
         park_code,
