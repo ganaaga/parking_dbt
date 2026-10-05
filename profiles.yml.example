@@ -1,0 +1,9 @@
+# copy to profiles.yml (this project) or ~/.dbt/profiles.yml
+parking_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: parking.duckdb    # path to the .duckdb file; relative to where you run dbt
+      schema: silver           # default; overridden per layer
+      threads: 1

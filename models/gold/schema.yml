@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: gld_daily_park_revenue
+    description: Daily ticket counts, revenue and avg duration per park
+    columns:
+      - name: entered_date
+        data_tests: [not_null]
+      - name: park_code
+        data_tests: [not_null]
+  - name: gld_hourly_traffic
+    description: Hourly entries/exits per park
+  - name: gld_vehicle_type_monthly
+    description: Monthly usage and revenue by vehicle type

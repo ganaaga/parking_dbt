@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: ticket
+        description: Raw parking tickets (entry/exit/payment events)
+      - name: payment_history
+        description: Raw payment history (payment events)
